@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List with Reminders</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2 class="title">To-Do List</h2>
+    <input type="text" id="task" class="input-field" placeholder="Enter task">
+    <input type="datetime-local" id="time" class="input-field">
+    <button class="btn" onclick="addTask()">Add</button>
+
+    <ul id="todoList" class="todo-list"></ul>
+
+    <div id="editOverlay" class="edit-overlay" style="display:none;">
+        <div class="edit-form-container">
+            <h3>Edit Task</h3>
+            <input type="text" id="editTask" class="input-field" placeholder="Edit task">
+            <input type="datetime-local" id="editTime" class="input-field">
+            <button class="btn" onclick="updateTask()">Update</button>
+            <button class="btn" onclick="cancelEdit()">Cancel</button>
+        </div>
+    </div>
+
+
+    <audio id="alarm" src="bao-thuc-samsung-nhacchuongviet.com.mp3"></audio>
+
+    <script src="main.js"></script>
+</body>
+</html>
